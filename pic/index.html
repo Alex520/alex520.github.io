@@ -1,0 +1,177 @@
+.<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Gallery: You & Me</title>
+	<link rel="stylesheet" href="css/lc_lightbox.css" />
+	<!-- SKINS -->
+	<link rel="stylesheet" href="skins/minimal.css" />
+	<!-- 示例页面基本样式 -->
+	<style type="text/css">
+	/*! normalize.css v2.1.2 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+
+
+	body{font:14px/20px Arial,sans-serif;background-color:#4E5869;margin:0;padding:0;color:#000}dl,ol,ul{padding:0;margin:0}h1,h2,h3,h4,h5,h6,p{margin-top:0;padding-right:15px;padding-left:15px}a img{border:none}a:link{color:#414958;text-decoration:underline}a:visited{color:#4E5869;text-decoration:underline}a:active,a:focus,a:hover{text-decoration:none}.container{width:80%;max-width:1260px;min-width:335px;background-color:#FFF;margin:0 auto}.header{background-color:#fdfdfd;}.sidebar1{float:right;width:20%;background-color:#93A5C4;padding-bottom:10px}.content{padding:10px 0;width:100%;float:right;background-color:#efefef}.content ol,.content ul{padding:0 15px 15px 40px}ul.nav{list-style:none;border-top:1px solid #666;margin-bottom:15px}ul.nav li{border-bottom:1px solid #666}ul.nav a,ul.nav a:visited{padding:5px 5px 5px 15px;display:block;text-decoration:none;background-color:#8090AB;color:#000}ul.nav a:active,ul.nav a:focus,ul.nav a:hover{background-color:#6F7D94;color:#FFF}.fltrt{float:right;margin-left:8px}.fltlft{float:left;margin-right:8px}.clearfloat{clear:both;height:0;font-size:1px;line-height:0}.content,.sidebar1{min-height:500px}.content>div{margin:20px 15px}@media screen and (max-width:900px){.content>div{width:100%!important}}
+
+	#logo {
+		background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYlJREFUeNrcV4FtgzAQBJQB3AlCN0gmiNkgnaBhg25QMUHSCUInKJkgZgNGyAhskP6r58qJsCEUE5qXLMvI8t//359NGDhMytWepk3gz7LQ4VzSdAw8WxTc2WYd9ymlymQop5Td87/IQEVDR137AhAahPNlFZWvtpVgRgtmulcA5CO5BmFyQHou8wJjmm3YB0B9TwAp1fKJ5mcap7EB7Mh5/qNKJTv/GAuAQsSHq+/zMaQ4R6RfzGRqpwJrZvWbbwDaGeuEwLc1hmm6HNshS8BMTxG5aDkjxv5sSAAFIo07nsPR7/p0RuSI6vWGcwQ4UQwFQPaQ6FVDp0z/RTRJAMxovj75rbDsqP0pnmyVjYikIawjR1z/TgA5HaYguRXEqO29qCXa1Y6iiVuRZaNr3dQxrrUTfGg+j8wfBtwBJ+hBm8pxBj7hfNsAWpdncZm60grA5EOG/n5H+mIAEx2y8wtAl/XWLhCIiCW5pPECciZ9ROcvPyacuj3Y/Pg6MDqAzLOP3EZAtm8BBgDqc3bEpb6xyQAAAABJRU5ErkJggg==') no-repeat center center transparent;
+		background-size: contain;
+		width: 25px;
+		height: 25px;
+		display: inline-block;
+		position: relative;
+		bottom: -4px;
+		left: -4px;
+	}
+
+	.elem, .elem * {
+		box-sizing: border-box;
+		margin: 0 !important;
+	}
+	.elem {
+		display: inline-block;
+		font-size: 0;
+		width: 33%;
+		border: 20px solid transparent;
+		border-bottom: none;
+		background: #fff;
+		padding: 10px;
+		height: auto;
+		background-clip: padding-box;
+	}
+	.elem > span {
+		display: block;
+		cursor: pointer;
+		height: 0;
+		padding-bottom:	70%;
+		background-size: cover;
+		background-position: center center;
+	}
+	</style>
+	<!-- LIGHTBOX FADING SHOW/HIDE EFFECT (as explained in documentation) -->
+	<style type="text/css">
+	.lcl_fade_oc.lcl_pre_show #lcl_overlay,
+	.lcl_fade_oc.lcl_pre_show #lcl_window,
+	.lcl_fade_oc.lcl_is_closing #lcl_overlay,
+	.lcl_fade_oc.lcl_is_closing #lcl_window {
+		opacity: 0 !important;
+	}
+	.lcl_fade_oc.lcl_is_closing #lcl_overlay {
+		-webkit-transition-delay: .15s !important;
+		transition-delay: .15s !important;
+	}
+	</style>
+
+</head>
+<body>
+
+		     <br/>    <br/>
+		<div class="container">
+
+
+	<div class="content">
+		<!-- <a class="elem" href="" title="标题" data-lcl-txt="描述" data-lcl-author="作者" data-lcl-thumb="">
+	        <span style="background-image: url()"></span>
+			</a> -->
+				<a class="elem" href="https://s1.imgsha.com/2018/10/09/7cmRR2.md.png" title="image22" data-lcl-txt="生活啊" data-lcl-author="烁" data-lcl-thumb="https://s1.imgsha.com/2018/10/09/7cmRR2.md.png">
+							<span style="background-image: url(https://s1.imgsha.com/2018/10/09/7cmRR2.md.png)"></span>
+					</a>
+					<a class="elem" href="https://s1.imgsha.com/2018/10/09/7cmp8W.md.png" title="image21" data-lcl-txt="生活啊" data-lcl-author="烁" data-lcl-thumb="https://s1.imgsha.com/2018/10/09/7cmp8W.png">
+								<span style="background-image: url(https://s1.imgsha.com/2018/10/09/7cmp8W.md.png)"></span>
+						</a>
+						<a class="elem" href="https://s1.imgsha.com/2018/10/09/7cmJN5.md.jpg" title="image20" data-lcl-txt="生活啊" data-lcl-author="烁" data-lcl-thumb="https://s1.imgsha.com/2018/10/09/7cmJN5.jpg">
+									<span style="background-image: url(https://s1.imgsha.com/2018/10/09/7cmJN5.md.jpg)"></span>
+							</a>
+			<a class="elem" href="https://s1.imgsha.com/2018/10/09/7cmTSe.md.png" title="image19" data-lcl-txt="生活啊" data-lcl-author="烁" data-lcl-thumb="https://s1.imgsha.com/2018/10/09/7cmTSe.md.png">
+		        <span style="background-image: url(https://s1.imgsha.com/2018/10/09/7cmTSe.md.png)"></span>
+				</a>
+				<a class="elem" href="https://s1.imgsha.com/2018/10/09/7cmcFT.md.jpg" title="image18" data-lcl-txt="生活啊" data-lcl-author="烁" data-lcl-thumb="https://s1.imgsha.com/2018/10/09/7cmcFT.md.jpg">
+			        <span style="background-image: url(https://s1.imgsha.com/2018/10/09/7cmcFT.md.jpg)"></span>
+					</a>
+					<a class="elem" href="https://s1.imgsha.com/2018/10/09/7cmLY9.md.jpg" title="image17" data-lcl-txt="生活啊" data-lcl-author="烁" data-lcl-thumb="https://s1.imgsha.com/2018/10/09/7cmLY9.md.jpg">
+				        <span style="background-image: url(https://s1.imgsha.com/2018/10/09/7cmLY9.md.jpg)"></span>
+						</a>
+						<a class="elem" href="https://s1.imgsha.com/2018/10/09/7cmZfR.md.jpg" title="image16" data-lcl-txt="生活啊" data-lcl-author="烁" data-lcl-thumb="https://s1.imgsha.com/2018/10/09/7cmZfR.md.jpg">
+					        <span style="background-image: url(https://s1.imgsha.com/2018/10/09/7cmZfR.md.jpg)"></span>
+							</a>
+							<a class="elem" href="https://s1.imgsha.com/2018/10/09/7cmWla.md.jpg" title="image15" data-lcl-txt="生活啊" data-lcl-author="烁" data-lcl-thumb="https://s1.imgsha.com/2018/10/09/7cmWla.md.jpg">
+						        <span style="background-image: url(https://s1.imgsha.com/2018/10/09/7cmWla.md.jpg)"></span>
+								</a>
+			<a class="elem" href="https://s1.imgsha.com/2018/10/09/7cmdX3.md.jpg" title="image14" data-lcl-txt="清爽" data-lcl-author="烁" data-lcl-thumb="https://s1.imgsha.com/2018/10/09/7cmdX3.md.jpg">
+								        <span style="background-image: url(https://s1.imgsha.com/2018/10/09/7cmdX3.md.jpg)"></span>
+										</a>
+			<a class="elem" href="https://s1.imgsha.com/2018/10/09/7cmFn8.md.jpg" title="image13" data-lcl-txt="游啊游啊游" data-lcl-author="烁" data-lcl-thumb="https://s1.imgsha.com/2018/10/09/7cmFn8.md.jpg">
+									        <span style="background-image: url(https://s1.imgsha.com/2018/10/09/7cmFn8.md.jpg)"></span>
+											</a>
+			<a class="elem" href="https://s1.imgsha.com/2018/10/09/7cmvRu.jpg" title="image12" data-lcl-txt="北区夕阳" data-lcl-author="烁" data-lcl-thumb="https://s1.imgsha.com/2018/10/09/7cmvRu.md.jpg">
+										        <span style="background-image: url(https://s1.imgsha.com/2018/10/09/7cmvRu.md.jpg)"></span>
+												</a>
+			<a class="elem" href="http://img1.ph.126.net/P9A67In7QbXlJ3dbPmPvBw==/3375166445838003202.jpg" title="image11" data-lcl-txt="博学而得友--四月绕东湖纪" data-lcl-author="烁" data-lcl-thumb="http://img1.ph.126.net/P9A67In7QbXlJ3dbPmPvBw==/3375166445838003202.jpg">
+												        <span style="background-image: url(http://img1.ph.126.net/P9A67In7QbXlJ3dbPmPvBw==/3375166445838003202.jpg)"></span>
+			</a><a class="elem" href="http://img0.ph.126.net/CBSAZspePy5ohZqnGrthwQ==/6597628318565925288.jpg" title="image10" data-lcl-txt="小黄油" data-lcl-author="烁" data-lcl-thumb="http://img0.ph.126.net/CBSAZspePy5ohZqnGrthwQ==/6597628318565925288.jpg">
+													        <span style="background-image: url(http://img0.ph.126.net/CBSAZspePy5ohZqnGrthwQ==/6597628318565925288.jpg)"></span>
+															</a>
+			<a class="elem" href="http://img1.ph.126.net/zSNwLBBpb1MwtqyKjxnSPg==/6632660958049618561.jpg" title="image9" data-lcl-txt="我们" data-lcl-author="烁友" data-lcl-thumb="http://img1.ph.126.net/zSNwLBBpb1MwtqyKjxnSPg==/6632660958049618561.jpg">
+														        <span style="background-image: url(http://img1.ph.126.net/zSNwLBBpb1MwtqyKjxnSPg==/6632660958049618561.jpg)"></span>
+																</a>
+			<a class="elem" href="http://img0.ph.126.net/CdyOA4VXhavQSpb-hym66w==/2042663906089723848.jpg" title="image8" data-lcl-txt="路漫漫其修远" data-lcl-author="不会拍照烁" data-lcl-thumb="http://img0.ph.126.net/CdyOA4VXhavQSpb-hym66w==/2042663906089723848.jpg">
+															        <span style="background-image: url(http://img0.ph.126.net/CdyOA4VXhavQSpb-hym66w==/2042663906089723848.jpg)"></span>
+																	</a>
+			<a class="elem" href="http://img2.ph.126.net/9XR0jWdETueK9V9MI9Pr8w==/6631461390866396009.jpg" title="image7" data-lcl-txt="王大脸" data-lcl-author="烁" data-lcl-thumb="http://img2.ph.126.net/9XR0jWdETueK9V9MI9Pr8w==/6631461390866396009.jpg">
+																        <span style="background-image: url(http://img2.ph.126.net/9XR0jWdETueK9V9MI9Pr8w==/6631461390866396009.jpg)"></span>
+																		</a>
+			<a class="elem" href="http://img0.ph.126.net/i-KbRbvbrvK2hW2DXwGMKQ==/6630089200351797795.jpg" title="image 6" data-lcl-txt="你也曾是少年" data-lcl-author="烁" data-lcl-thumb="http://img0.ph.126.net/i-KbRbvbrvK2hW2DXwGMKQ==/6630089200351797795.jpg">
+		        <span style="background-image: url(http://img0.ph.126.net/i-KbRbvbrvK2hW2DXwGMKQ==/6630089200351797795.jpg)"></span>
+				</a>
+	        <a class="elem" href="http://img0.ph.126.net/jX0frkH83GnTvqNlXHG51Q==/844143455255775594.jpg" title="image 5" data-lcl-txt="美丽的友友" data-lcl-author="烁" data-lcl-thumb="http://img0.ph.126.net/jX0frkH83GnTvqNlXHG51Q==/844143455255775594.jpg">
+	        	<span style="background-image: url(http://img0.ph.126.net/jX0frkH83GnTvqNlXHG51Q==/844143455255775594.jpg);"></span>
+	        </a>
+
+	        <a class="elem" href="http://img2.ph.126.net/ez320P9WnTVDU1dyqdKnQQ==/1416382082908468466.jpg" title="image 4" data-lcl-txt="天真善良的烁烁" data-lcl-author="烁" data-lcl-thumb="http://img2.ph.126.net/ez320P9WnTVDU1dyqdKnQQ==/1416382082908468466.jpg">
+	        	<span style="background-image: url(http://img2.ph.126.net/ez320P9WnTVDU1dyqdKnQQ==/1416382082908468466.jpg);"></span>
+	        </a>
+
+
+	        <a class="elem" href="http://img2.ph.126.net/ikHn10IE5BxUiPhfACnyUg==/6597803140914748568.jpg" title="image 3" data-lcl-txt="傻狗" data-lcl-author="琳" data-lcl-thumb="http://img2.ph.126.net/ikHn10IE5BxUiPhfACnyUg==/6597803140914748568.jpg">
+	        	<span style="background-image: url(http://img2.ph.126.net/ikHn10IE5BxUiPhfACnyUg==/6597803140914748568.jpg);"></span>
+	        </a>
+
+	        <a class="elem" href="http://img0.ph.126.net/6gD6n0lcBwcixJK4rNzp_Q==/6597553551775238478.jpg" title="image 2" data-lcl-txt="傻狗" data-lcl-author="琳" data-lcl-thumb="http://img0.ph.126.net/6gD6n0lcBwcixJK4rNzp_Q==/6597553551775238478.jpg">
+	        	<span style="background-image: url(http://img0.ph.126.net/6gD6n0lcBwcixJK4rNzp_Q==/6597553551775238478.jpg);"></span>
+	        </a>
+
+	        <a class="elem" href="http://img1.ph.126.net/FGxz98OIR-Xh4CYUajsUeg==/6597987858868218103.jpg" title="image 1" data-lcl-txt="北京砷国际会议" data-lcl-author="路人甲" data-lcl-thumb="http://img1.ph.126.net/FGxz98OIR-Xh4CYUajsUeg==/6597987858868218103.jpg">
+	        	<span style="background-image: url(http://img1.ph.126.net/FGxz98OIR-Xh4CYUajsUeg==/6597987858868218103.jpg);"></span>
+	        </a>
+
+	   		<br/><br/>
+	   	</div>
+	</div>
+
+
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/lc_lightbox.lite.js" type="text/javascript"></script>
+	<!-- ASSETS -->
+	<script src="lib/AlloyFinger/alloy_finger.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(e) {
+			// live handler
+			lc_lightbox('.elem', {
+				wrap_class: 'lcl_fade_oc',
+				gallery : true,
+				thumb_attr: 'data-lcl-thumb',
+
+				skin: 'minimal',
+				radius: 0,
+				padding	: 0,
+				border_w: 0,
+			});
+
+		});
+	</script>
+</body>
+</html>
