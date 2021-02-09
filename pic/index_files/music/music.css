@@ -1,0 +1,83 @@
+/*
+ CSS: Cascading Style Sheet
+ 层叠样式表单，通过一些列选择器以及属性的
+ 组合对HTML页面样式以及效果进行渲染
+ */
+ * { margin: 0; padding: 0; }
+ img { border: 0; vertical-align: top; }
+ body { width: 100%; height: 100%; background-color: #F3F3F3; }
+
+ #mask {
+   position: absolute;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+ }
+
+ #carousel {
+   position: relative;
+   z-index: 2;
+   height: 200px;
+   margin-top: 200px;
+
+   transform-style: preserve-3d;
+   perspective: 800px;
+ }
+ #carousel img {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   width: 400px;
+   height: 300px;
+   margin-left: -200px;
+   margin-top: -100px;
+   border-radius: 8px;
+   transition: transform 0.5s ease-in-out;
+ }
+
+.music-box{
+	position:absolute;/*绝对定位*/
+	right:20px;
+	top:20px;
+	width:80px;
+	height:80px;
+	overflow: hidden;
+	background-color: #d2d2d2;
+	border-radius:50%;
+	border:2px solid #fff;
+	cursor: pointer;
+	z-index: 10;
+}
+.music-box>img{
+	width:100%;
+	height:100%;
+}
+
+.play{
+	animation:music-play 5s infinite linear;	
+}
+
+/*自定义动画*/
+@keyframes music-play{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+/*模态窗体的样式*/
+.modal{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10001;
+	width:100%;
+	min-width: 500px;
+	text-align: center;
+	background-color:rgba(0,0,0,.8);
+}
+
+.img-item{
+	position:absolute;
+	top:50%;
+	left:50%;
+}
