@@ -8,7 +8,7 @@
 	DOM模型 Document Object Model
 */
 //标志位，标记歌曲是否在播放
-var isplay = false;
+var isplay = true;
 //获取页面中播放音频资源的播放器对象
 var player = document.getElementById('player');
 //根据元素的id属性获取元素对象,并且绑定一个点击事件
